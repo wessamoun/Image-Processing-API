@@ -1,3 +1,4 @@
+// Set up the server
 import express from "express";
 import routes from "./routes/image";
 const app = express();
@@ -8,8 +9,10 @@ app.get("/", (req, res) => {
     "Insert image info in the URL to resize .. example: (http://localhost:8000/api/image?filename=fjord&width=600&height=300) "
   );
 });
+
 app.use("/api", routes);
 
+// start the server
 app.listen(port, () => {
   console.log(`http://localhost:${port}`);
 });

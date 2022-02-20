@@ -1,3 +1,4 @@
+// Supertest to test the status of responses from servers.
 import supertest from "supertest";
 import app from "../index";
 

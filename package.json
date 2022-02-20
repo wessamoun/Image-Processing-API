@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint **/*.ts",
-    "prettier": "npx prettier **/*.ts --write && npx prettier **/*.js --write",
+    "prettier": "npx prettier src/**/*.ts --write && npx prettier build/**/*.js --write",
     "jasmine": "jasmine",
     "build": "npx tsc",
     "test": "npm run build && npm run jasmine",
@@ -25,17 +25,17 @@
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jasmine": "^4.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
     "nodemon": "^2.0.15",
     "prettier": "2.5.1",
+    "supertest": "^6.2.2",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
   },
   "dependencies": {
     "@types/sharp": "^0.29.5",
     "express": "^4.17.3",
-    "jasmine": "^4.0.2",
-    "jasmine-spec-reporter": "^7.0.0",
-    "sharp": "^0.30.1",
-    "supertest": "^6.2.2"
+    "sharp": "^0.30.1"
   }
 }
